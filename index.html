@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- htmlaunch:enhanced:v2 -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22hsl(147%2C72%25%2C58%25)%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22hsl(177%2C72%25%2C44%25)%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2246%22%20text-anchor%3D%22middle%22%20font-family%3D%22ui-sans-serif%2Csystem-ui%2C-apple-system%2CSegoe%20UI%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20fill%3D%22%23ffffff%22%3EZ%3C%2Ftext%3E%3C%2Fsvg%3E">
+<meta name="theme-color" content="#35147b">
+<meta name="description" content="Zotefoams plc · Standalone Pitch · Joe Barry · April 2026 | deployed with HTMLaunch">
+<link rel="canonical" href="https://jbarry0803.github.io/zotefoams-plc-standalone-pitch-joe-barry/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zotefoams plc · Standalone Pitch · Joe Barry · April 2026">
+<meta property="og:title" content="Zotefoams plc · Standalone Pitch · Joe Barry · April 2026">
+<meta property="og:description" content="Zotefoams plc · Standalone Pitch · Joe Barry · April 2026 | deployed with HTMLaunch">
+<meta property="og:url" content="https://jbarry0803.github.io/zotefoams-plc-standalone-pitch-joe-barry/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fjbarry0803.github.io%2Fzotefoams-plc-standalone-pitch-joe-barry%2F?w=1200&h=630">
+<meta property="og:image:alt" content="Zotefoams plc · Standalone Pitch · Joe Barry · April 2026">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zotefoams plc · Standalone Pitch · Joe Barry · April 2026">
+<meta name="twitter:description" content="Zotefoams plc · Standalone Pitch · Joe Barry · April 2026 | deployed with HTMLaunch">
+<meta name="twitter:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fjbarry0803.github.io%2Fzotefoams-plc-standalone-pitch-joe-barry%2F?w=1200&h=630">
+<meta name="twitter:image:alt" content="Zotefoams plc · Standalone Pitch · Joe Barry · April 2026">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zotefoams plc · Standalone Pitch · Joe Barry · April 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Oswald:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  font-family: 'Oswald', 'Helvetica Neue', sans-serif;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+:root {
+  --bg: #0a1624;
+  --surface: rgba(255,255,255,0.025);
+  --border: rgba(255,255,255,0.08);
+  --text: rgba(255,255,255,0.85);
+  --text-bright: #ffffff;
+  --text-dim: rgba(255,255,255,0.55);
+  --text-faint: rgba(255,255,255,0.35);
+  --gold: #d4a84a;
+  --red: #d45b5b;
+  --green: #5fb98c;
+  --ztf-azure: #5b8def;
+}
+
+#pw-gate {
+  position: fixed; inset: 0; z-index: 99999;
+  display: flex; align-items: center; justify-content: center;
+  background: #0a1624;
+  font-family: Oswald, sans-serif;
+  overflow: hidden;
+}
+#pw-gate::before {
+  content: '';
+  position: absolute;
+  inset: -80%;
+  z-index: 0;
+  background: radial-gradient(circle, rgba(91,141,239,0.08) 0%, transparent 60%);
+  animation: gateBg 30s linear infinite;
+}
+@keyframes gateBg {
+  0% { transform: rotate(0deg) scale(1); }
+  100% { transform: rotate(360deg) scale(1.2); }
+}
+.pw-drift {
+  position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0;
+}
+.pw-float {
+  position: absolute;
+  font-size: 28px;
+  opacity: 0;
+  animation-name: pwDrift;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  filter: grayscale(0.2);
+  user-select: none;
+}
+@keyframes pwDrift {
+  0%   { transform: translateY(110vh) rotate(0deg);   opacity: 0; }
+  10%  { opacity: 0.28; }
+  90%  { opacity: 0.28; }
+  100% { transform: translateY(-20vh) rotate(15deg);  opacity: 0; }
+}
+.pw-confetti {
+  position: absolute; inset: 0; pointer-events: none; z-index: 99999;
+  overflow: hidden;
+}
+.pw-confetti span {
+  position: absolute;
+  top: 50%; left: 50%;
+  font-size: 22px;
+  opacity: 0;
+  animation: pwPop 1.1s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+@keyframes pwPop {
+  0%   { transform: translate(-50%, -50%) scale(0);   opacity: 1; }
+  100% { transform: translate(var(--dx), var(--dy)) scale(1.2) rotate(var(--dr)); opacity: 0; }
+}
+@keyframes pwShake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
+.pw-gate-card.shake { animation: pwShake 0.4s; }
+
+#pw-error.attributed {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: #c41e00 !important;
+}
+#pw-error .who {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 10px;
+  color: #0a1624;
+  margin-right: 6px;
+}
+
+#main-content { display: none; }
+#main-content.show { display: block; animation: reveal 0.5s ease-out both; }
+@keyframes reveal { from { opacity: 0; } to { opacity: 1; } }
+
+.masthead {
+  background: linear-gradient(180deg, #0d1c30 0%, var(--bg) 100%);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+.masthead::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 20%, rgba(91,141,239,0.06), transparent 50%);
+}
+.masthead-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 36px 40px 28px;
+  position: relative;
+}
+.classification {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  color: var(--red);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.masthead h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-bright);
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+.masthead h1 .ticker {
+  color: var(--ztf-azure);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.6em;
+  margin-left: 12px;
+}
+.masthead .archetype-tag {
+  display: inline-block;
+  background: rgba(91,141,239,0.15);
+  border: 1px solid var(--ztf-azure);
+  color: var(--ztf-azure);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 4px;
+  margin-top: 14px;
+  font-weight: 600;
+}
+.masthead .subtitle {
+  font-size: 13px;
+  color: var(--text-dim);
+  margin-top: 16px;
+  font-weight: 300;
+  line-height: 1.65;
+  max-width: 900px;
+}
+.masthead .meta-row {
+  display: flex;
+  gap: 28px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px;
+  color: var(--text-faint);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tab-nav {
+  background: rgba(255,255,255,0.02);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+.tab-nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+}
+.tab-btn {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  padding: 16px 16px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  transition: color 0.2s, border-color 0.2s;
+}
+.tab-btn:hover { color: var(--text); }
+.tab-btn.active {
+  color: var(--ztf-azure);
+  border-bottom-color: var(--ztf-azure);
+}
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; animation: tabIn 0.4s ease-out; }
+@keyframes tabIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 40px 80px;
+}
+
+.section { margin-bottom: 30px; }
+.section-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--ztf-azure);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-bright);
+  letter-spacing: -0.3px;
+  margin: 0 0 10px 0;
+}
+.sub {
+  font-size: 12.5px;
+  color: var(--text-dim);
+  line-height: 1.65;
+  margin-bottom: 16px;
+  max-width: 1000px;
+}
+
+.metric-strip {
+  display: grid;
+  gap: 10px;
+}
+.grid-6 { grid-template-columns: repeat(6, 1fr); }
+.metric-cell {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 16px;
+  text-align: left;
+}
+.mc-val {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+.mc-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  line-height: 1.3;
+}
+
+.table-wrap { overflow-x: auto; }
+.ct {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.ct th {
+  text-align: left;
+  background: rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  border-bottom: 1px solid var(--border);
+}
+.ct td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.ct tbody tr:last-child td { border-bottom: none; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 18px;
+}
+.card-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.card-body { font-size: 12.5px; line-height: 1.7; color: var(--text); }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+
+.news-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.news-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 16px;
+}
+.news-date {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.news-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+.news-body {
+  font-size: 11.5px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+.chart-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 18px 20px;
+}
+.chart-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.chart-sub {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.chart-svg { width: 100%; height: auto; display: block; }
+.chart-caption {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+/* ===== MOAT block (mirrored from main deck) ===== */
+.moat-block { margin-top: 12px; }
+.moat-header {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.moat-header-left { flex: 1; }
+.moat-header-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.moat-header-type {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+.moat-header-sub {
+  font-size: 12px;
+  color: var(--text-dim);
+  font-style: italic;
+}
+.moat-header-verdict {
+  border-radius: 6px;
+  padding: 10px 16px;
+  text-align: center;
+  min-width: 200px;
+}
+.moat-verdict-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+.moat-verdict-value {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.moat-evidence-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.moat-evidence-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 16px;
+}
+.moat-evidence-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.moat-evidence-body {
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: var(--text-dim);
+}
+.moat-evidence-body strong { color: var(--text); }
+.moat-sustainability {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--text-dim);
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+}
+.moat-sus-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+.moat-sus-body { font-size: 12.5px; line-height: 1.7; color: var(--text); }
+.moat-sus-body strong { color: var(--gold); }
+.moat-compounding {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px 20px;
+}
+.moat-comp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+.moat-comp-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.moat-comp-result {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-weight: 700;
+}
+.cm-table { width: 100%; border-collapse: collapse; font-size: 11.5px; margin-bottom: 12px; }
+.cm-table th {
+  text-align: left;
+  padding: 6px 8px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  border-bottom: 1px solid var(--border);
+}
+.cm-table td { padding: 7px 8px; border-bottom: 1px dashed var(--border); }
+.cm-table tr:last-child td { border-bottom: none; }
+.cm-label { color: var(--text-dim); }
+.cm-val { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+.cm-note { color: var(--text-faint); font-size: 11px; line-height: 1.5; }
+.moat-comp-kicker {
+  background: rgba(212,148,74,0.06);
+  border-left: 2px solid var(--gold);
+  padding: 10px 14px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text);
+  margin-bottom: 10px;
+  border-radius: 0 4px 4px 0;
+}
+.moat-comp-kicker strong { color: var(--gold); }
+.moat-comp-note { font-size: 11.5px; line-height: 1.6; color: var(--text-dim); font-style: italic; }
+
+@media (max-width: 900px) {
+  .grid-6 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: 1fr; }
+  .news-grid { grid-template-columns: 1fr; }
+  .moat-evidence-grid { grid-template-columns: 1fr; }
+  .moat-header { flex-direction: column; align-items: stretch; }
+  .moat-header-verdict { min-width: 0; }
+  .masthead-inner { padding: 24px 16px 18px; }
+  .masthead h1 { font-size: 24px; }
+  .container { padding: 20px 16px 60px; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- PASSWORD GATE -->
+<div id="pw-gate">
+
+<div class="pw-drift">
+<span class="pw-float" style="left: 8%;  animation-duration: 22s; animation-delay: 0s;    font-size: 30px;">👟</span>
+<span class="pw-float" style="left: 18%; animation-duration: 26s; animation-delay: -5s;  font-size: 26px;">🧪</span>
+<span class="pw-float" style="left: 28%; animation-duration: 20s; animation-delay: -2s;  font-size: 32px;">🏭</span>
+<span class="pw-float" style="left: 38%; animation-duration: 24s; animation-delay: -11s; font-size: 24px;">⚗️</span>
+<span class="pw-float" style="left: 48%; animation-duration: 28s; animation-delay: -7s;  font-size: 30px;">📈</span>
+<span class="pw-float" style="left: 58%; animation-duration: 21s; animation-delay: -14s; font-size: 28px;">👟</span>
+<span class="pw-float" style="left: 68%; animation-duration: 27s; animation-delay: -3s;  font-size: 32px;">💼</span>
+<span class="pw-float" style="left: 78%; animation-duration: 23s; animation-delay: -9s;  font-size: 26px;">🇻🇳</span>
+<span class="pw-float" style="left: 88%; animation-duration: 25s; animation-delay: -16s; font-size: 28px;">🇬🇧</span>
+</div>
+<div class="pw-confetti" id="pw-confetti"></div>
+
+<div class="pw-gate-card" style="max-width:420px;width:90%;background:#fff;border-radius:14px;padding:40px 36px;text-align:center;position:relative;box-shadow:0 20px 60px rgba(0,10,24,0.5);z-index:1;animation:cardIn .6s cubic-bezier(.34,1.56,.64,1) both">
+ <div style="font-size:13px;letter-spacing:.25em;text-transform:uppercase;color:#3b6cb5;font-weight:700;margin-bottom:6px">Standalone Pitch</div>
+ <div style="font-family:'Playfair Display',serif;font-size:24px;color:#0a1624;font-weight:700;margin-bottom:4px">Zotefoams plc</div>
+ <div style="font-size:11px;color:#888;margin-bottom:24px">Prepared by Joe Barry · April 2026</div>
+ <div style="width:60px;height:2px;background:#5b8def;margin:0 auto 24px;border-radius:1px"></div>
+ <input type="text" id="pw-field" placeholder="Password" autocomplete="off" spellcheck="false" style="width:100%;padding:12px 16px;border:2px solid #d4e0f0;border-radius:8px;font-family:Oswald,sans-serif;font-size:16px;text-align:center;color:#333;outline:none;background:#f7faff;transition:all .3s">
+ <button onclick="checkPw()" style="width:100%;padding:12px;margin-top:10px;background:#3b6cb5;color:#fff;border:none;border-radius:8px;font-family:Oswald,sans-serif;font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .2s">Enter</button>
+ <div id="pw-error" style="color:#c41e00;font-size:11px;font-weight:600;margin-top:10px;min-height:16px"></div>
+ <div style="font-size:9px;color:#aaa;margin-top:16px">Private document</div>
+</div>
+
+</div>
+<style>@keyframes cardIn {from {opacity:0;transform:translateY(20px) scale(0.95)} to {opacity:1;transform:translateY(0) scale(1)}}</style>
+
+<script>
+(function(){
+  var f = document.getElementById("pw-field");
+  if (!f) return;
+  f.addEventListener("keydown", function(e){ if (e.key === "Enter") checkPw(); });
+  setTimeout(function(){ f.focus(); }, 400);
+})();
+
+var pwRejects = [
+  { who: "Cox",     say: "\u201CWrong shoe.\u201D" },
+  { who: "Nike",    say: "\u201CNot the password.\u201D" },
+  { who: "Wright",  say: "\u201CTry again.\u201D" },
+  { who: "Croydon", say: "\u201CNo.\u201D" },
+  { who: "Bouncer", say: "\u201CNot today.\u201D" }
+];
+var pwLastReject = -1;
+
+function fireConfetti(){
+  var c = document.getElementById("pw-confetti");
+  if (!c) return;
+  var emojis = ["\ud83c\udf89", "\ud83c\udf8a", "\ud83d\udc5f", "\ud83d\udcc8", "\ud83e\uddea"];
+  for (var i = 0; i < 28; i++) {
+    var s = document.createElement("span");
+    s.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+    var angle = (Math.PI * 2) * (i / 28) + (Math.random() * 0.5);
+    var dist = 180 + Math.random() * 220;
+    var dx = Math.cos(angle) * dist;
+    var dy = Math.sin(angle) * dist;
+    s.style.setProperty("--dx", dx + "px");
+    s.style.setProperty("--dy", dy + "px");
+    s.style.setProperty("--dr", (Math.random() * 720 - 360) + "deg");
+    s.style.animationDelay = (Math.random() * 0.15) + "s";
+    c.appendChild(s);
+  }
+  setTimeout(function(){ c.innerHTML = ""; }, 1500);
+}
+
+function checkPw(){
+  var f = document.getElementById("pw-field");
+  var e = document.getElementById("pw-error");
+  var card = document.querySelector(".pw-gate-card");
+  var v = f.value.toLowerCase().trim();
+
+  if (v === "croydon") {
+    f.style.borderColor = "#4CAF50";
+    e.classList.remove("attributed");
+    e.style.color = "#3b6cb5";
+    e.innerHTML = "<span class=\"who\">Cox:</span> Welcome in.";
+    fireConfetti();
+    setTimeout(function(){
+      var g = document.getElementById("pw-gate");
+      g.style.transition = "opacity 0.5s";
+      g.style.opacity = "0";
+      document.getElementById("main-content").classList.add("show");
+    }, 700);
+    setTimeout(function(){
+      document.getElementById("pw-gate").style.display = "none";
+    }, 1250);
+  } else if (v === "") {
+    e.textContent = "";
+  } else {
+    var newIdx;
+    do { newIdx = Math.floor(Math.random() * pwRejects.length); }
+    while (newIdx === pwLastReject && pwRejects.length > 1);
+    pwLastReject = newIdx;
+    var r = pwRejects[newIdx];
+    f.style.borderColor = "#c41e00";
+    f.style.background = "#fff5f5";
+    e.classList.add("attributed");
+    e.innerHTML = "<span class=\"who\">" + r.who + ":</span> " + r.say;
+    if (card) {
+      card.classList.remove("shake");
+      void card.offsetWidth;
+      card.classList.add("shake");
+    }
+    setTimeout(function(){
+      f.style.borderColor = "#d4e0f0";
+      f.style.background = "#f7faff";
+    }, 450);
+  }
+}
+</script>
+
+<!-- MAIN CONTENT -->
+<div id="main-content">
+
+<div class="masthead">
+<div class="masthead-inner">
+ <div class="classification">Private · Standalone Investment Note · Prices as of 21 April 2026</div>
+ <h1>Zotefoams plc <span class="ticker">· LON: ZTF</span></h1>
+ <div class="archetype-tag">Standalone Pitch · UK Specialty Compounder</div>
+ <div class="subtitle">Quality compounder with a 100-year-old patented manufacturing moat and a clear medium-term doubling target — but with single-customer concentration that would disqualify it from a Cevian portfolio. Worth analysing as an example of UK specialty industrial quality at sub-£250m scale.</div>
+ <div class="meta-row">
+   <span>Joe Barry · April 2026 · 426p · £208m MC · 9.5× EV/EBITDA · ~16% ROCE</span>
+ </div>
+</div>
+</div>
+
+<div class="tab-nav">
+<div class="tab-nav-inner">
+ <button class="tab-btn active" onclick="switchTab(event,'thesis')">① Thesis</button>
+ <button class="tab-btn" onclick="switchTab(event,'financials')">② Financials</button>
+ <button class="tab-btn" onclick="switchTab(event,'sotp')">③ SOTP</button>
+ <button class="tab-btn" onclick="switchTab(event,'news')">④ News &amp; Catalysts</button>
+ <button class="tab-btn" onclick="switchTab(event,'risks')">⑤ Risks</button>
+ <button class="tab-btn" onclick="switchTab(event,'charts')">⑥ Charts</button>
+ <button class="tab-btn" onclick="switchTab(event,'moat')">⑦ Moat &amp; Compounding</button>
+ <button class="tab-btn" onclick="switchTab(event,'conclusion')">⑧ Conclusion</button>
+ <button class="tab-btn" onclick="switchTab(event,'sources')">⑨ Sources</button>
+</div>
+</div>
+
+<!-- TAB 1: Thesis -->
+<div id="tab-thesis" class="tab-panel active">
+<div class="container">
+<div class="section">
+<div class="section-label">§ 1 — Investment Thesis</div>
+<h2>The Compounding Case</h2>
+<div class="sub" style="font-size:14px; line-height:1.75; max-width:1100px;">Croydon-based specialty foams manufacturer founded 1921, IPO 1993. World leader in <strong>supercritical (gas-blown) polyolefin and high-performance foams</strong> using a patented autoclave process that produces uniformly cellular, low-density foams competitors can't replicate at scale. Three segments: Polyolefin Foams (AZOTE — building, marine, packaging), High-Performance Products (ZOTEK — aerospace, medical, T-FIT cleanroom; Nike footwear cushioning), and MuCell Extrusion (licensed microcellular technology). FY2025 record results: revenue £158.5m (+7%), adj op profit £22.8m (+26%), op margin 14.4%. <strong>Nike represented ~40% of revenue</strong> — both the largest opportunity and the largest risk. November 2025 completed first-ever acquisition (OKC, Spanish technical foams, €36m / 7× EBITDA). Vietnam footwear plant commissioning late 2026. Medium-term target: <strong>£300m revenue, £60m op profit</strong> (vs current £158m / £22.8m). Stock at 426p, well off 479p high, trades on ~9.5× EV/EBITDA, ~13× P/E forward.</div>
+</div>
+</div>
+</div>
+
+<!-- TAB 2: Financials -->
+<div id="tab-financials" class="tab-panel">
+<div class="container">
+<div class="section">
+<div class="section-label">§ 2 — Key Financials at a Glance</div>
+<h2>The Numbers</h2>
+<div class="metric-strip grid-6">
+<div class="metric-cell"><div class="mc-val" style="color:#5b8def;">426p</div><div class="mc-label">ZTF @ April 2026</div></div>
+<div class="metric-cell"><div class="mc-val" style="color:#5b8def;">£208m</div><div class="mc-label">Market cap</div></div>
+<div class="metric-cell"><div class="mc-val" style="color:#5b8def;">~9.5×</div><div class="mc-label">EV/EBITDA</div></div>
+<div class="metric-cell"><div class="mc-val" style="color:#5b8def;">£158.5m</div><div class="mc-label">FY25 revenue (+7%)</div></div>
+<div class="metric-cell"><div class="mc-val" style="color:#5b8def;">14.4%</div><div class="mc-label">FY25 adj op margin</div></div>
+<div class="metric-cell"><div class="mc-val" style="color:#5b8def;">£300m / £60m</div><div class="mc-label">Medium-term target</div></div>
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- TAB 3: SOTP -->
+<div id="tab-sotp" class="tab-panel">
+<div class="container">
+<div class="section">
+<div class="section-label">§ 3 — Sum-of-Parts</div>
+<h2>Segment Breakdown &amp; Implied Value</h2>
+<div class="sub">Segment EBITDA estimates × peer-comp multiples to derive intrinsic value range. Same framework as the broader Cevian deck, applied to Zotefoams' specific segment economics.</div>
+<div class="table-wrap">
+<table class="ct">
+<thead><tr>
+<th>Segment</th>
+<th style="text-align:right; width:130px;">EBITDA est.</th>
+<th style="text-align:right; width:90px;">Multiple</th>
+<th style="text-align:right; width:170px;">Implied value</th>
+</tr></thead>
+<tbody><tr>
+<td><strong style="color:#5b8def;">High-Performance Products (HPP)</strong><br><span style="font-size:11px; color:var(--text-dim);">Now the largest segment by revenue. Includes ZOTEK F (aerospace), ZOTEK N (medical), T-FIT (cleanroom insulation), and footwear (Nike + others). Footwear is ~83% of HPP, making this segment the Nike-concentration vehicle. Premium multiple reflects irreplaceable autoclave technology + Nike contracted to 2029.</span></td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace;">£18-22m</td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace;">11-14×</td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#5b8def;">£200m - £310m</td>
+</tr>
+<tr>
+<td><strong style="color:#5b8def;">Polyolefin Foams (AZOTE)</strong><br><span style="font-size:11px; color:var(--text-dim);">Legacy block-foam business — building & construction, marine, protective packaging, sports & leisure. Lower-growth but consistent cash generator. Comparable to industrial commodity-foam multiples.</span></td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace;">£6-8m</td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace;">7-9×</td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#5b8def;">£42m - £72m</td>
+</tr>
+<tr>
+<td><strong style="color:#5b8def;">MuCell Extrusion</strong><br><span style="font-size:11px; color:var(--text-dim);">Licensed microcellular extrusion technology (separate from the autoclave process). Modest licence-revenue stream + machinery sales. Optionality more than core value.</span></td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace;">£1-2m</td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace;">6-10×</td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#5b8def;">£6m - £20m</td>
+</tr>
+<tr>
+<td><strong style="color:#5b8def;">OKC (acquired Nov 2025)</strong><br><span style="font-size:11px; color:var(--text-dim);">Spanish technical foam producer; 115 employees across Anglesola and Burgos. Acquired at 7× trailing EBITDA. Adds protective components, acoustic insulation, specialty packaging capability.</span></td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace;">€5.3m (~£4.5m)</td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace;">7-9×</td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#5b8def;">£32m - £41m</td>
+</tr>
+<tr>
+<td><strong style="color:#5b8def;">Vietnam facility (in build)</strong><br><span style="font-size:11px; color:var(--text-dim);">$32m total project cost, $10m from Seoheung JV partner (17.5% stake). Commissioning late 2026, ramping 2027-28. Held at depreciated cost; option value on Asian footwear capacity.</span></td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace;">Pre-revenue</td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace;">Replacement value</td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#5b8def;">£20m - £30m</td>
+</tr>
+<tr>
+<td><strong style="color:#5b8def;">Net debt</strong><br><span style="font-size:11px; color:var(--text-dim);">Net debt position post-OKC acquisition; new £90m RCF (with £30m accordion) signed Jan 2026 with NatWest, Handelsbanken, HSBC. Comfortable leverage.</span></td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace;">~£15m</td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace;">1×</td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#5b8def;">−£15m</td>
+</tr>
+<tr style="background:rgba(91,141,239,0.08); border-top:2px solid #5b8def;">
+<td><strong style="color:#5b8def;">SOTP TOTAL (range)</strong></td>
+<td colspan="2" style="text-align:right; color:var(--text-dim); font-style:italic;">vs current MC £208m</td>
+<td style="text-align:right; font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:14px; color:#5b8def;">£285m - £458m (vs current £208m MC)</td>
+</tr></tbody>
+</table>
+</div>
+<div class="sub" style="margin-top:8px; font-size:11.5px; color:var(--text-dim); font-style:italic;">SOTP suggests 35-120% upside but the valuation gap reflects (i) Nike single-customer concentration overhang, (ii) AIM/small-cap discount, (iii) Vietnam execution risk, (iv) ReZorce write-down (£15.2m exceptional charge in FY24) damaged credibility on innovation projects. Mid-point ~£370m = 760p — close to the 12-month analyst consensus 592-606p.</div>
+</div>
+</div>
+</div>
+
+<!-- TAB 4: News -->
+<div id="tab-news" class="tab-panel">
+<div class="container">
+<div class="section">
+<div class="section-label">§ 4 — Recent News &amp; Catalysts</div>
+<h2>What Has Moved the Story</h2>
+<div class="news-grid"><div class="news-item">
+<div class="news-date" style="color:#5b8def;">Mar 2026</div>
+<div class="news-title">FY25 prelim results — record profitability</div>
+<div class="news-body">Revenue £158.5m (+7%), adj op profit £22.8m (+26%), adj op margin 14.4% (+220bps). HPP exceeded Polyolefin Foams for first time. Final dividend +5%. CEO Cox: "really strong year". Vietnam machinery £4.3m invested; second low-pressure vessel in US operational. Nike represents ~40% of group revenue.</div>
+</div>
+<div class="news-item">
+<div class="news-date" style="color:#5b8def;">Jan 2026</div>
+<div class="news-title">Trading update + £90m RCF refinanced</div>
+<div class="news-body">EMEA +9.4% to £123.9m on Consumer & Lifestyle (footwear); North America +6.7% to £30.1m. Asia £4.2m (lower China construction). New £90m multi-currency RCF with £30m accordion signed with NatWest, Handelsbanken, HSBC on improved terms.</div>
+</div>
+<div class="news-item">
+<div class="news-date" style="color:#5b8def;">Nov 2025</div>
+<div class="news-title">OKC acquisition (Spain, €36m / 7× EBITDA)</div>
+<div class="news-body">First M&A under "Expanding Beyond the Core" strategy. €27.6m upfront + up to €8.4m deferred earn-out. OKC has 115 employees, two Spanish facilities, expertise in protective components, acoustic insulation, specialty packaging. Earnings accretive in year one.</div>
+</div>
+<div class="news-item">
+<div class="news-date" style="color:#5b8def;">Aug 2025</div>
+<div class="news-title">Seoheung JV for Vietnam ($10m for 17.5%)</div>
+<div class="news-body">Korean footwear supply-chain specialist Seoheung committed $10m for 17.5% stake in Vietnam facility (total project $32m). Brings local manufacturing expertise + customer relationships across Korea, Vietnam, Indonesia, China.</div>
+</div>
+<div class="news-item">
+<div class="news-date" style="color:#5b8def;">Aug 2024</div>
+<div class="news-title">Nike supply agreement extended to 31 Dec 2029</div>
+<div class="news-body">Exclusive Nike footwear cushioning supply agreement extended through end-2029. Beyond direct revenue, agreement signals Nike's continued commitment to Zotefoams' supercritical process — confirms moat durability.</div>
+</div>
+<div class="news-item">
+<div class="news-date" style="color:#5b8def;">Dec 2024</div>
+<div class="news-title">ReZorce circular packaging — investment paused</div>
+<div class="news-body">£4.9m non-recurring operating cost + £15.2m exceptional charge to wind down ReZorce circular packaging programme after failing to secure investment partner. Material setback to "expanding beyond the core" narrative.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- TAB 5: Risks -->
+<div id="tab-risks" class="tab-panel">
+<div class="container">
+<div class="section">
+<div class="section-label">§ 5 — Key Risks</div>
+<h2>What Can Go Wrong</h2>
+<div class="grid-3"><div class="card" style="border-left:3px solid var(--red); padding-left:20px;">
+<div class="card-label" style="color:var(--red)">Risk — Nike concentration (40% of revenue)</div>
+<div class="card-body" style="font-size:12px; line-height:1.75;">Nike represents ~40% of group revenue and the dominant share of the highest-margin HPP segment. Any change in shoe-platform specifications, sourcing strategy, or relationship cooling would be catastrophic for earnings. <strong>Mitigant:</strong> exclusive supply contract extended to Dec 2029; product is engineered into specific shoe platforms (Vaporfly, Pegasus, Air Max franchises) with multi-year design cycles; Nike has invested alongside Zotefoams in Vietnam capacity, signalling commitment.</div>
+</div>
+<div class="card" style="border-left:3px solid var(--red); padding-left:20px;">
+<div class="card-label" style="color:var(--red)">Risk — Nike footwear inventory normalisation in 2026</div>
+<div class="card-body" style="font-size:12px; line-height:1.75;">Management explicitly flagged that footwear demand will <strong>moderate in 2026</strong> as Nike normalises channel inventory after multi-year build. Could mean flat to down HPP revenue in 2026. <strong>Mitigant:</strong> OKC acquisition + Transport & Smart Tech growth + medical can offset; medium-term Olympics 2028 cycle restoration.</div>
+</div>
+<div class="card" style="border-left:3px solid var(--red); padding-left:20px;">
+<div class="card-label" style="color:var(--red)">Risk — ReZorce write-down credibility damage</div>
+<div class="card-body" style="font-size:12px; line-height:1.75;">£15.2m exceptional + £4.9m non-recurring to wind down ReZorce in late 2024 was a significant innovation failure. Damages management credibility on the broader "expanding beyond the core" thesis. <strong>Mitigant:</strong> New CFO (Wright, ex-Marshalls and Essentra), new NED (Clarke, Oct 2025); board has been refreshed; OKC represents disciplined M&A discipline (7× multiple, complementary).</div>
+</div>
+<div class="card" style="border-left:3px solid var(--red); padding-left:20px;">
+<div class="card-label" style="color:var(--red)">Risk — US tariff exposure on Vietnam exports</div>
+<div class="card-body" style="font-size:12px; line-height:1.75;">Vietnam plant is built specifically to serve Nike US footwear assembly. US tariff regime on Vietnamese imports could pressure economics. <strong>Mitigant:</strong> CEO's public response — even with tariffs, Vietnamese labour is ~10% of US cost, so footwear assembly will not return onshore. Tariffs hit Nike, not Zotefoams.</div>
+</div>
+<div class="card" style="border-left:3px solid var(--red); padding-left:20px;">
+<div class="card-label" style="color:var(--red)">Risk — Smaller-cap liquidity / index ineligibility</div>
+<div class="card-body" style="font-size:12px; line-height:1.75;">Average daily volume modest; not in any major index (FTSE SmallCap only). Institutional sponsorship limited. <strong>Mitigant:</strong> not actually a mitigant for institutional buyers — this is structurally what it is. Personal/retail-friendly; activist-unfriendly.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- TAB 6: Charts -->
+<div id="tab-charts" class="tab-panel">
+<div class="container">
+<div class="section">
+<div class="section-label">§ 6 — Market, Cycle &amp; Capital Efficiency</div>
+<h2>Share Price, Through-Cycle Multiple &amp; Returns on Capital</h2>
+<div class="sub">Ten-year share price with EV/EBITDA overlay showing where today sits inside the ten-year multiple range, and the annual arc of ROIC / ROCE against cost of capital.</div>
+
+<div class="chart-box">
+<div class="chart-title" style="color:#5b8def;">① Ten-Year Share Price &amp; EV/EBITDA</div>
+<div class="chart-sub">Monthly closes (left axis); quarterly EV/EBITDA (right axis). Horizontal dashes mark the 10-year min, average and max multiple.</div>
+<svg class="chart-svg" viewBox="0 0 540 260" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(58, 10)">
+  <line x1="0" y1="7" x2="18" y2="7" stroke="#5b8def" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="22" y="10" fill="var(--text)" font-size="10" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">Share price (left)</text>
+  <line x1="155" y1="7" x2="173" y2="7" stroke="var(--text-dim)" stroke-width="1.2" stroke-dasharray="4,2.5" stroke-linecap="round"/>
+  <text x="177" y="10" fill="var(--text)" font-size="10" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">EV/EBITDA (right)</text>
+  <line x1="315" y1="7" x2="333" y2="7" stroke="var(--text-faint)" stroke-width="0.8" stroke-dasharray="2,2" stroke-linecap="round"/>
+  <text x="337" y="10" fill="var(--text-dim)" font-size="10" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">10y Min / Avg / Max</text>
+</g>
+<line x1="58" y1="230.0" x2="482" y2="230.0" stroke="var(--border)" stroke-width="0.5" opacity="0.25"/>
+<text x="52.0" y="233.0" text-anchor="end" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace">185p</text>
+<line x1="58" y1="181.5" x2="482" y2="181.5" stroke="var(--border)" stroke-width="0.5" opacity="0.25"/>
+<text x="52.0" y="184.5" text-anchor="end" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace">328p</text>
+<line x1="58" y1="133.0" x2="482" y2="133.0" stroke="var(--border)" stroke-width="0.5" opacity="0.25"/>
+<text x="52.0" y="136.0" text-anchor="end" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace">471p</text>
+<line x1="58" y1="84.5" x2="482" y2="84.5" stroke="var(--border)" stroke-width="0.5" opacity="0.25"/>
+<text x="52.0" y="87.5" text-anchor="end" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace">613p</text>
+<line x1="58" y1="36.0" x2="482" y2="36.0" stroke="var(--border)" stroke-width="0.5" opacity="0.25"/>
+<text x="52.0" y="39.0" text-anchor="end" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace">756p</text>
+<line x1="58" y1="54.3" x2="482" y2="54.3" stroke="var(--text-dim)" stroke-width="0.7" stroke-dasharray="3,3" opacity="0.5"/>
+<text x="488.0" y="52.3" text-anchor="start" fill="var(--text-dim)" font-size="8.5" font-family="IBM Plex Mono, monospace" letter-spacing="0.15">10y MAX</text>
+<text x="488.0" y="61.8" text-anchor="start" fill="var(--text)" font-size="9.5" font-family="IBM Plex Mono, monospace" font-weight="600">22.0×</text>
+<line x1="58" y1="152.8" x2="482" y2="152.8" stroke="var(--text-dim)" stroke-width="0.7" stroke-dasharray="5,3" opacity="0.6"/>
+<text x="488.0" y="150.8" text-anchor="start" fill="var(--text-dim)" font-size="8.5" font-family="IBM Plex Mono, monospace" letter-spacing="0.15">10y AVG</text>
+<text x="488.0" y="160.3" text-anchor="start" fill="var(--text)" font-size="9.5" font-family="IBM Plex Mono, monospace" font-weight="600">12.5×</text>
+<line x1="58" y1="225.4" x2="482" y2="225.4" stroke="var(--text-dim)" stroke-width="0.7" stroke-dasharray="3,3" opacity="0.5"/>
+<text x="488.0" y="223.4" text-anchor="start" fill="var(--text-dim)" font-size="8.5" font-family="IBM Plex Mono, monospace" letter-spacing="0.15">10y MIN</text>
+<text x="488.0" y="232.9" text-anchor="start" fill="var(--text)" font-size="9.5" font-family="IBM Plex Mono, monospace" font-weight="600">5.5×</text>
+<path d="M 58.0,177.4 L 61.6,175.7 L 65.1,170.6 L 68.7,167.2 L 72.3,163.8 L 75.8,160.4 L 79.4,153.6 L 82.9,148.5 L 86.5,143.4 L 90.1,138.3 L 93.6,133.2 L 97.2,128.1 L 100.8,123.0 L 104.3,117.9 L 107.9,112.8 L 111.4,107.7 L 115.0,102.6 L 118.6,97.5 L 122.1,92.4 L 125.7,87.3 L 129.3,92.4 L 132.8,97.5 L 136.4,102.6 L 139.9,107.7 L 143.5,109.4 L 147.1,104.3 L 150.6,95.8 L 154.2,87.3 L 157.8,78.8 L 161.3,68.6 L 164.9,58.4 L 168.5,48.2 L 172.0,55.0 L 175.6,68.6 L 179.1,89.0 L 182.7,109.4 L 186.3,119.6 L 189.8,114.5 L 193.4,106.0 L 197.0,95.8 L 200.5,85.6 L 204.1,75.4 L 207.6,65.2 L 211.2,55.0 L 214.8,58.4 L 218.3,65.2 L 221.9,73.7 L 225.5,83.9 L 229.0,90.7 L 232.6,109.4 L 236.2,163.8 L 239.7,180.8 L 243.3,168.9 L 246.8,153.6 L 250.4,143.4 L 254.0,136.6 L 257.5,141.7 L 261.1,148.5 L 264.7,153.6 L 268.2,148.5 L 271.8,141.7 L 275.3,133.2 L 278.9,126.4 L 282.5,119.6 L 286.0,114.5 L 289.6,119.6 L 293.2,124.7 L 296.7,129.8 L 300.3,133.2 L 303.8,136.6 L 307.4,140.0 L 311.0,143.4 L 314.5,148.5 L 318.1,157.0 L 321.7,167.2 L 325.2,177.4 L 328.8,187.6 L 332.4,197.8 L 335.9,204.6 L 339.5,209.7 L 343.0,214.8 L 346.6,219.9 L 350.2,223.3 L 353.7,226.7 L 357.3,223.3 L 360.9,218.2 L 364.4,213.1 L 368.0,208.0 L 371.5,202.9 L 375.1,197.8 L 378.7,192.7 L 382.2,187.6 L 385.8,189.3 L 389.4,192.7 L 392.9,196.1 L 396.5,201.2 L 400.1,196.1 L 403.6,187.6 L 407.2,177.4 L 410.7,168.9 L 414.3,160.4 L 417.9,151.9 L 421.4,143.4 L 425.0,134.9 L 428.6,133.2 L 432.1,136.6 L 435.7,141.7 L 439.2,146.8 L 442.8,141.7 L 446.4,136.6 L 449.9,131.5 L 453.5,133.2 L 457.1,136.6 L 460.6,140.0 L 464.2,143.4 L 467.7,136.6 L 471.3,131.5 L 474.9,138.3 L 478.4,143.4 L 482.0,148.2 L 482.0,230.0 L 58.0,230.0 Z" fill="#5b8def" opacity="0.08"/>
+<path d="M 58.0,177.4 L 61.6,175.7 L 65.1,170.6 L 68.7,167.2 L 72.3,163.8 L 75.8,160.4 L 79.4,153.6 L 82.9,148.5 L 86.5,143.4 L 90.1,138.3 L 93.6,133.2 L 97.2,128.1 L 100.8,123.0 L 104.3,117.9 L 107.9,112.8 L 111.4,107.7 L 115.0,102.6 L 118.6,97.5 L 122.1,92.4 L 125.7,87.3 L 129.3,92.4 L 132.8,97.5 L 136.4,102.6 L 139.9,107.7 L 143.5,109.4 L 147.1,104.3 L 150.6,95.8 L 154.2,87.3 L 157.8,78.8 L 161.3,68.6 L 164.9,58.4 L 168.5,48.2 L 172.0,55.0 L 175.6,68.6 L 179.1,89.0 L 182.7,109.4 L 186.3,119.6 L 189.8,114.5 L 193.4,106.0 L 197.0,95.8 L 200.5,85.6 L 204.1,75.4 L 207.6,65.2 L 211.2,55.0 L 214.8,58.4 L 218.3,65.2 L 221.9,73.7 L 225.5,83.9 L 229.0,90.7 L 232.6,109.4 L 236.2,163.8 L 239.7,180.8 L 243.3,168.9 L 246.8,153.6 L 250.4,143.4 L 254.0,136.6 L 257.5,141.7 L 261.1,148.5 L 264.7,153.6 L 268.2,148.5 L 271.8,141.7 L 275.3,133.2 L 278.9,126.4 L 282.5,119.6 L 286.0,114.5 L 289.6,119.6 L 293.2,124.7 L 296.7,129.8 L 300.3,133.2 L 303.8,136.6 L 307.4,140.0 L 311.0,143.4 L 314.5,148.5 L 318.1,157.0 L 321.7,167.2 L 325.2,177.4 L 328.8,187.6 L 332.4,197.8 L 335.9,204.6 L 339.5,209.7 L 343.0,214.8 L 346.6,219.9 L 350.2,223.3 L 353.7,226.7 L 357.3,223.3 L 360.9,218.2 L 364.4,213.1 L 368.0,208.0 L 371.5,202.9 L 375.1,197.8 L 378.7,192.7 L 382.2,187.6 L 385.8,189.3 L 389.4,192.7 L 392.9,196.1 L 396.5,201.2 L 400.1,196.1 L 403.6,187.6 L 407.2,177.4 L 410.7,168.9 L 414.3,160.4 L 417.9,151.9 L 421.4,143.4 L 425.0,134.9 L 428.6,133.2 L 432.1,136.6 L 435.7,141.7 L 439.2,146.8 L 442.8,141.7 L 446.4,136.6 L 449.9,131.5 L 453.5,133.2 L 457.1,136.6 L 460.6,140.0 L 464.2,143.4 L 467.7,136.6 L 471.3,131.5 L 474.9,138.3 L 478.4,143.4 L 482.0,148.2" fill="none" stroke="#5b8def" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 58.0,204.7 L 68.9,199.5 L 79.7,191.2 L 90.6,183.9 L 101.5,173.6 L 112.4,163.2 L 123.2,152.8 L 134.1,147.6 L 145.0,142.4 L 155.8,116.5 L 166.7,90.6 L 177.6,137.3 L 188.5,147.6 L 199.3,132.1 L 210.2,111.3 L 221.1,121.7 L 231.9,137.3 L 242.8,173.6 L 253.7,168.4 L 264.6,147.6 L 275.4,121.7 L 286.3,100.9 L 297.2,85.4 L 308.1,54.3 L 318.9,90.6 L 329.8,132.1 L 340.7,168.4 L 351.5,199.5 L 362.4,209.9 L 373.3,225.4 L 384.2,215.1 L 395.0,204.7 L 405.9,199.5 L 416.8,183.9 L 427.6,173.6 L 438.5,163.2 L 449.4,168.4 L 460.3,173.6 L 471.1,178.8 L 482.0,183.9" fill="none" stroke="var(--text-dim)" stroke-width="1.3" stroke-dasharray="4,2.5" stroke-linejoin="round" stroke-linecap="round" opacity="0.85"/>
+<circle cx="482.0" cy="148.2" r="3.8" fill="#5b8def" stroke="var(--bg)" stroke-width="1.5"/>
+<text x="476.0" y="140.2" text-anchor="end" fill="#5b8def" font-size="11" font-family="IBM Plex Mono, monospace" font-weight="700">426p</text>
+<circle cx="482.0" cy="183.9" r="3.2" fill="var(--text)" stroke="var(--bg)" stroke-width="1.5"/>
+<text x="476.0" y="197.9" text-anchor="end" fill="var(--text)" font-size="10" font-family="IBM Plex Mono, monospace" font-weight="600">9.5×</text>
+<text x="58.0" y="250" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">Apr 16</text>
+<text x="142.8" y="250" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">Apr 18</text>
+<text x="227.6" y="250" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">Apr 20</text>
+<text x="312.4" y="250" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">Apr 22</text>
+<text x="397.2" y="250" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">Apr 24</text>
+<text x="482.0" y="250" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">Apr 26</text>
+</svg>
+<div class="chart-caption">Multiple: 10y MIN 5.5× · AVG 12.5× · MAX 22.0× · NOW 9.5×. Current multiple is below 10y average — cheaper than typical entry, reflecting Nike-cycle moderation overhang and post-ReZorce credibility damage.</div>
+</div>
+
+<div class="chart-box" style="margin-top:16px;">
+<div class="chart-title" style="color:#5b8def;">② ROIC &amp; ROCE — Ten-Year Trend vs Cost of Capital</div>
+<div class="chart-sub">Annual % returns. Shading shows value creation (green) where ROIC &gt; WACC and value destruction (red) where ROIC &lt; WACC.</div>
+<svg class="chart-svg" viewBox="0 0 540 230" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(52, 10)">
+  <line x1="0" y1="7" x2="18" y2="7" stroke="#5b8def" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="9" cy="7" r="2.5" fill="#5b8def"/>
+  <text x="22" y="10" fill="var(--text)" font-size="10" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">ROIC</text>
+  <line x1="80" y1="7" x2="98" y2="7" stroke="#5b8def" stroke-width="1.4" stroke-dasharray="5,2.5" stroke-linecap="round" opacity="0.7"/>
+  <text x="102" y="10" fill="var(--text)" font-size="10" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">ROCE</text>
+  <line x1="160" y1="7" x2="178" y2="7" stroke="#8aa8c8" stroke-width="1.2" stroke-dasharray="4,2.5" stroke-linecap="round"/>
+  <text x="182" y="10" fill="var(--text)" font-size="10" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">WACC 9.5%</text>
+  <rect x="260" y="2" width="10" height="10" fill="#4ade80" opacity="0.22" rx="1"/>
+  <text x="274" y="10" fill="var(--text)" font-size="10" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">Value creation</text>
+  <rect x="370" y="2" width="10" height="10" fill="#d45b5b" opacity="0.22" rx="1"/>
+  <text x="384" y="10" fill="var(--text)" font-size="10" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">Value destruction</text>
+</g>
+<line x1="52" y1="143.7" x2="520" y2="143.7" stroke="var(--border)" stroke-width="0.5" opacity="0.25"/>
+<text x="46.0" y="146.7" text-anchor="end" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace">5%</text>
+<line x1="52" y1="108.4" x2="520" y2="108.4" stroke="var(--border)" stroke-width="0.5" opacity="0.25"/>
+<text x="46.0" y="111.4" text-anchor="end" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace">10%</text>
+<line x1="52" y1="73.2" x2="520" y2="73.2" stroke="var(--border)" stroke-width="0.5" opacity="0.25"/>
+<text x="46.0" y="76.2" text-anchor="end" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace">15%</text>
+<line x1="52" y1="38.0" x2="520" y2="38.0" stroke="var(--border)" stroke-width="0.5" opacity="0.25"/>
+<text x="46.0" y="41.0" text-anchor="end" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace">20%</text>
+<line x1="52" y1="178.9" x2="520" y2="178.9" stroke="var(--text-faint)" stroke-width="0.8" opacity="0.5"/>
+<path d="M 52.0,97.9 L 104.0,90.8 L 104.0,112.0 L 52.0,112.0 Z" fill="#4ade80" opacity="0.18"/>
+<path d="M 104.0,90.8 L 156.0,80.3 L 156.0,112.0 L 104.0,112.0 Z" fill="#4ade80" opacity="0.18"/>
+<path d="M 156.0,80.3 L 208.0,83.8 L 208.0,112.0 L 156.0,112.0 Z" fill="#4ade80" opacity="0.18"/>
+<path d="M 208.0,83.8 L 260.0,101.4 L 260.0,112.0 L 208.0,112.0 Z" fill="#4ade80" opacity="0.18"/>
+<path d="M 260.0,101.4 L 312.0,104.9 L 312.0,112.0 L 260.0,112.0 Z" fill="#4ade80" opacity="0.18"/>
+<path d="M 312.0,104.9 L 338.0,112.0 L 312.0,112.0 Z" fill="#4ade80" opacity="0.18"/>
+<path d="M 338.0,112.0 L 364.0,119.0 L 364.0,112.0 Z" fill="#d45b5b" opacity="0.20"/>
+<path d="M 364.0,119.0 L 416.0,129.6 L 416.0,112.0 L 364.0,112.0 Z" fill="#d45b5b" opacity="0.20"/>
+<path d="M 416.0,129.6 L 444.9,112.0 L 416.0,112.0 Z" fill="#d45b5b" opacity="0.20"/>
+<path d="M 444.9,112.0 L 468.0,97.9 L 468.0,112.0 Z" fill="#4ade80" opacity="0.18"/>
+<path d="M 468.0,97.9 L 520.0,76.7 L 520.0,112.0 L 468.0,112.0 Z" fill="#4ade80" opacity="0.18"/>
+<path d="M 52.0,87.3 L 104.0,80.3 L 156.0,66.2 L 208.0,73.2 L 260.0,90.8 L 312.0,94.3 L 364.0,108.4 L 416.0,119.0 L 468.0,83.8 L 520.0,66.2" fill="none" stroke="#5b8def" stroke-width="1.5" stroke-dasharray="5,2.5" opacity="0.65" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="52" y1="112.0" x2="520" y2="112.0" stroke="#8aa8c8" stroke-width="1.3" stroke-dasharray="5,3" opacity="0.9"/>
+<path d="M 52.0,97.9 L 104.0,90.8 L 156.0,80.3 L 208.0,83.8 L 260.0,101.4 L 312.0,104.9 L 364.0,119.0 L 416.0,129.6 L 468.0,97.9 L 520.0,76.7" fill="none" stroke="#5b8def" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="52.0" cy="97.9" r="3.2" fill="#5b8def" stroke="var(--bg)" stroke-width="1.5"/>
+<text x="52.0" y="89.9" text-anchor="middle" fill="#5b8def" font-size="9.5" font-family="IBM Plex Mono, monospace" font-weight="700">11.5</text>
+<circle cx="104.0" cy="90.8" r="3.2" fill="#5b8def" stroke="var(--bg)" stroke-width="1.5"/>
+<text x="104.0" y="82.8" text-anchor="middle" fill="#5b8def" font-size="9.5" font-family="IBM Plex Mono, monospace" font-weight="700">12.5</text>
+<circle cx="156.0" cy="80.3" r="3.2" fill="#5b8def" stroke="var(--bg)" stroke-width="1.5"/>
+<text x="156.0" y="72.3" text-anchor="middle" fill="#5b8def" font-size="9.5" font-family="IBM Plex Mono, monospace" font-weight="700">14.0</text>
+<circle cx="208.0" cy="83.8" r="3.2" fill="#5b8def" stroke="var(--bg)" stroke-width="1.5"/>
+<text x="208.0" y="75.8" text-anchor="middle" fill="#5b8def" font-size="9.5" font-family="IBM Plex Mono, monospace" font-weight="700">13.5</text>
+<circle cx="260.0" cy="101.4" r="3.2" fill="#5b8def" stroke="var(--bg)" stroke-width="1.5"/>
+<text x="260.0" y="93.4" text-anchor="middle" fill="#5b8def" font-size="9.5" font-family="IBM Plex Mono, monospace" font-weight="700">11.0</text>
+<circle cx="312.0" cy="104.9" r="3.2" fill="#5b8def" stroke="var(--bg)" stroke-width="1.5"/>
+<text x="312.0" y="96.9" text-anchor="middle" fill="#5b8def" font-size="9.5" font-family="IBM Plex Mono, monospace" font-weight="700">10.5</text>
+<circle cx="364.0" cy="119.0" r="3.2" fill="#5b8def" stroke="var(--bg)" stroke-width="1.5"/>
+<text x="364.0" y="111.0" text-anchor="middle" fill="#5b8def" font-size="9.5" font-family="IBM Plex Mono, monospace" font-weight="700">8.5</text>
+<circle cx="416.0" cy="129.6" r="3.2" fill="#5b8def" stroke="var(--bg)" stroke-width="1.5"/>
+<text x="416.0" y="143.6" text-anchor="middle" fill="#5b8def" font-size="9.5" font-family="IBM Plex Mono, monospace" font-weight="700">7.0</text>
+<circle cx="468.0" cy="97.9" r="3.2" fill="#5b8def" stroke="var(--bg)" stroke-width="1.5"/>
+<text x="468.0" y="89.9" text-anchor="middle" fill="#5b8def" font-size="9.5" font-family="IBM Plex Mono, monospace" font-weight="700">11.5</text>
+<circle cx="520.0" cy="76.7" r="3.2" fill="#5b8def" stroke="var(--bg)" stroke-width="1.5"/>
+<text x="520.0" y="68.7" text-anchor="middle" fill="#5b8def" font-size="9.5" font-family="IBM Plex Mono, monospace" font-weight="700">14.5</text>
+<text x="52.0" y="220" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">2016</text>
+<text x="104.0" y="220" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">2017</text>
+<text x="156.0" y="220" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">2018</text>
+<text x="208.0" y="220" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">2019</text>
+<text x="260.0" y="220" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">2020</text>
+<text x="312.0" y="220" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">2021</text>
+<text x="364.0" y="220" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">2022</text>
+<text x="416.0" y="220" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">2023</text>
+<text x="468.0" y="220" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">2024</text>
+<text x="520.0" y="220" text-anchor="middle" fill="var(--text-faint)" font-size="9" font-family="IBM Plex Mono, monospace" letter-spacing="0.3">2025</text>
+</svg>
+<div class="chart-caption" style="margin-top:6px;">
+  <span style="color:var(--text-dim); font-size:10px; letter-spacing:0.08em;">WACC DERIVATION:</span>
+  <span style="font-size:11.5px;">β ~1.1 (specialty chemicals, single-customer concentration risk) × 5.5% ERP + 3.0% Rf + 5.0% after-tax cost of debt (10% weight; new £90m RCF light leverage) + 100bps small-cap illiquidity premium for ~£210m MC. Risk-free rate = 10-year UK gilt average.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- TAB 7: Moat -->
+<div id="tab-moat" class="tab-panel">
+<div class="container">
+<div class="section">
+<div class="section-label">§ 7 — Moat &amp; Compounding Mechanics</div>
+<h2>Structural Moat &amp; Compounding Math</h2>
+<div class="sub">Applying Pat Dorsey's framework (<em>The Little Book That Builds Wealth</em>): which of the four sources of economic moat does this business have, is the moat sustainable, and does the compounding math actually work?</div>
+
+<div class="moat-block">
+
+<div class="moat-header" style="border-left-color:#5b8def;">
+  <div class="moat-header-left">
+    <div class="moat-header-label" style="color:#5b8def;">Moat Classification</div>
+    <div class="moat-header-type">Intangible (Process IP) + Switching Cost (Designed-In Specifications)</div>
+    <div class="moat-header-sub">Patented supercritical autoclave process + multi-year integration into customer product platforms</div>
+  </div>
+  <div class="moat-header-verdict" style="background:rgba(95,185,140,0.12); color:#5fb98c; border:1px solid #5fb98c;">
+    <div class="moat-verdict-label">Dorsey Test</div>
+    <div class="moat-verdict-value">PASS (single-customer caveat)</div>
+  </div>
+</div>
+
+<div class="moat-evidence-grid"><div class="moat-evidence-card">
+<div class="moat-evidence-title" style="color:#5b8def;">Supercritical autoclave manufacturing (intangible / process IP)</div>
+<div class="moat-evidence-body">Zotefoams uses a <strong>two-stage nitrogen gas-blown autoclave process</strong> (rather than chemical blowing agents) that produces foams with uniform cell structure, lower density, and higher purity than competing technologies. The process has been refined over 100+ years (Croydon facility operating since 1923). New entrants face decades of process know-how to replicate at scale — the IP is partly patented but mostly tacit operational knowledge.</div>
+</div>
+<div class="moat-evidence-card">
+<div class="moat-evidence-title" style="color:#5b8def;">Designed-in to Nike shoe platforms (switching cost)</div>
+<div class="moat-evidence-body">Nike’s footwear cushioning compounds (in Vaporfly, Pegasus, Alphafly franchises) are <strong>engineered around Zotefoams’ specific foam properties</strong> — density, energy return, durability. Switching supplier would require complete shoe re-design, re-testing, athlete validation. Multi-year cycle. Same dynamic in aerospace (ZOTEK F is FAR 25.853 fire-rated for cabin interiors — qualified into Boeing/Airbus programmes) and medical (ZOTEK N qualified for prosthetic / orthotic applications).</div>
+</div>
+<div class="moat-evidence-card">
+<div class="moat-evidence-title" style="color:#5b8def;">T-FIT cleanroom + ZOTEK F aerospace certifications (intangible)</div>
+<div class="moat-evidence-body">T-FIT cleanroom insulation is qualified for semiconductor fab and pharmaceutical applications — multi-year approval cycles by end-customers (TSMC, Samsung, biopharma). ZOTEK F is one of very few foam materials passing FAA OSU (Ohio State University) heat-release test for aircraft interiors. Both certifications are barriers to entry that competitors must spend 2-4 years achieving.</div>
+</div>
+</div>
+
+<div class="moat-sustainability">
+  <div class="moat-sus-label">Sustainability — "If the CEO is hit by a bus, does the moat survive?"</div>
+  <div class="moat-sus-body">Genuine intangible-process moat — the autoclave manufacturing knowledge has been compounding inside the Croydon facility for 100+ years and survives any management change. Switching costs in footwear, aerospace, and cleanroom are real and structural. Financial signature confirms moat: ROIC trajectory 8% → 14.5% under Cox, op margin expanded from ~11% to 14.4% in two years, gross margins 28%+ in the foam business. <strong>The caveat that holds the moat back from a clean PASS:</strong> Nike alone is ~40% of revenue. A moat that depends on one customer’s continued commitment is structurally weaker than one that depends on thousands of customers — even if that one customer is locked in by spec. Dorsey would recognise this as a real moat with a concentrated revenue exposure, not a broken moat.</div>
+</div>
+
+<div class="moat-compounding">
+  <div class="moat-comp-header">
+    <div class="moat-comp-title" style="color:#5b8def;">Compounding Mechanics — 5-Year Annualised Return Build</div>
+    <div class="moat-comp-result" style="color:#5b8def;">~16-22% CAGR if execution lands</div>
+  </div>
+  <table class="cm-table">
+    <thead><tr><th style="width:32%;">Component</th><th style="width:18%;">Annual contribution</th><th>Note</th></tr></thead>
+    <tbody><tr>
+<td class="cm-label">Organic revenue growth</td>
+<td class="cm-val" style="color:#5b8def;">+8-12%</td>
+<td class="cm-note">Medium-term target implies ~13% CAGR to £300m by 2030; HPP growing fastest</td>
+</tr>
+<tr>
+<td class="cm-label">Margin expansion</td>
+<td class="cm-val" style="color:#5b8def;">+200bps over 5y</td>
+<td class="cm-note">14.4% → ~18%+ on volume leverage + Vietnam efficiency + OKC accretion</td>
+</tr>
+<tr>
+<td class="cm-label">Underlying EPS growth</td>
+<td class="cm-val" style="color:#5b8def;">+15-20%</td>
+<td class="cm-note">Op leverage + lower tax rate (12-13% from R&D + Patent Box)</td>
+</tr>
+<tr>
+<td class="cm-label">Dividend yield</td>
+<td class="cm-val" style="color:#5b8def;">+1.8%</td>
+<td class="cm-note">5% dividend hike for FY25; progressive policy</td>
+</tr>
+<tr>
+<td class="cm-label">Buyback yield</td>
+<td class="cm-val" style="color:var(--text-dim);">0%</td>
+<td class="cm-note">Capital allocated to growth + M&A; no buybacks</td>
+</tr>
+<tr>
+<td class="cm-label">M&A optionality</td>
+<td class="cm-val" style="color:var(--text);">+3-5% one-shot</td>
+<td class="cm-note">OKC template suggests further accretive deals at 6-8× EBITDA</td>
+</tr>
+<tr>
+<td class="cm-label">Multiple rerating</td>
+<td class="cm-val" style="color:#5b8def;">+15-25%</td>
+<td class="cm-note">If Nike risk demonstrably diversified, 9.5× → 12-13× EV/EBITDA</td>
+</tr>
+</tbody>
+  </table>
+  <div class="moat-comp-kicker"><strong>Plus optionality:</strong> The hidden compound: Vietnam plant + OKC + South Korea innovation centre + Footwear Innovation Center together represent the platform for the £300m / £60m medium-term target. If management hits that, the stock at current 9.5× EBITDA on £22.8m → 9.5× on £60m = ~£570m EV vs current ~£225m. Roughly 2.5× the current EV at unchanged multiple.</div>
+  <div class="moat-comp-note">This is a textbook quality compounder thesis with above-average execution risk. The medium-term target is credible (revenue path is largely capacity-led, not market-share-led) but depends on (a) Nike relationship stability, (b) Vietnam commissioning on time, (c) OKC integration delivering the accretion. Reward asymmetry is good if you accept Nike concentration; downside protection is the debt-light balance sheet + 100-year process IP.</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- TAB 8: Conclusion -->
+<div id="tab-conclusion" class="tab-panel">
+<div class="container">
+<div class="section">
+<div class="section-label">§ 8 — The Honest Conclusion</div>
+<h2 style="color:var(--gold);">Why Not a Cevian Position — But Why It's Worth Knowing</h2>
+<div class="card" style="border-left:3px solid var(--gold); padding-left:20px;">
+<div class="card-label" style="color:var(--gold);">Filter rejection — calibration reference, not a recommendation</div>
+<div class="card-body" style="font-size:12.5px; line-height:1.85;">Five structural rejections: (1) <strong>Cheque size</strong> — at £208m MC, even a 10% stake is £21m; below Cevian’s minimum position size by an order of magnitude. (2) <strong>Single-customer concentration</strong> — 40% of revenue from Nike means activist pressure on Nike-related decisions is impossible without risking the relationship; the operational levers Cevian usually pulls don’t apply. (3) <strong>Liquidity</strong> — modest daily volume; building a meaningful position would take months and exit similar. (4) <strong>Industry scope</strong> — specialty chemicals isn’t a core Cevian sector vs industrials/financials. (5) <strong>Strategy already in flight</strong> — the Cox-led "Expanding Beyond the Core" strategy is already executing; there’s no structural change for an activist to drive. <br><br><strong>Where it does fit:</strong> a personal long-only portfolio at appropriate sizing. Quality compounder, 100-year moat, credible 2× revenue path, debt-light, founder-mentality leadership refreshed under Cox. Worth holding if you can stomach Nike-cycle volatility and AIM-style liquidity.</div>
+</div>
+
+<div style="margin-top:24px;">
+<div class="section-label">§ 8.1 — Joe's Take</div>
+<div class="card" style="border-left:3px solid #5b8def; padding-left:20px;">
+<div class="card-label" style="color:#5b8def;">Personal portfolio fit</div>
+<div class="card-body" style="font-size:12.5px; line-height:1.85;">
+This is the kind of name Andrew would respect — small-cap UK industrial with a real, ancient, hard-to-replicate moat (the Croydon autoclave process is genuinely 100 years old) trading at a reasonable multiple after a sentiment crash. The Nike concentration is the elephant; everything turns on whether you believe Nike-Zotefoams is a 10-year relationship or a 30-year one. The 2029 contract extension and Nike's investment alongside Zotefoams in Vietnam suggest the latter. <br><br>
+<strong>Sizing:</strong> 1-2% of a personal portfolio, accept that it'll trade with Nike's footwear cycle for the next 18 months. The 5-year compounding case (£300m / £60m → ~570p+ at unchanged multiple, more if rerated) is genuinely attractive. <strong>This belongs alongside Goodwin, IMI and Smiths in a UK-quality compounder allocation</strong> — not in a Cevian portfolio.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- TAB 9: Sources -->
+<div id="tab-sources" class="tab-panel">
+<div class="container">
+<div class="section">
+<div class="section-label">§ 9 — Sources</div>
+<h2>Verifiable Source Material</h2>
+<div class="sub">Every number in this deck is traceable to one of the following primary or established secondary sources. As of 21 April 2026.</div>
+
+<div class="table-wrap">
+<table class="ct">
+<thead><tr><th>Source</th><th>What it provides</th></tr></thead>
+<tbody>
+<tr><td><strong>Zotefoams FY2025 Preliminary Results</strong><br><span style="font-size:10px;color:var(--text-dim)">17 March 2026 release; investor presentation; investegate.co.uk filing</span></td><td>Revenue £158.5m (+7%), adj op profit £22.8m (+26%), op margin 14.4%, ~40% Nike revenue concentration, 5% dividend hike, OKC contribution £2m post-acquisition.</td></tr>
+<tr><td><strong>Zotefoams Annual Report 2024</strong><br><span style="font-size:10px;color:var(--text-dim)">zotefoams.com/wp-content/uploads/2025/10/Zotefoams_AR24.pdf</span></td><td>Capital Markets Day strategy, ReZorce write-down detail, Footwear Innovation Center plans, segment breakdown by application.</td></tr>
+<tr><td><strong>Zotefoams trading updates Jan 2026 + Aug 2025 + Mar 2025</strong><br><span style="font-size:10px;color:var(--text-dim)">zotefoams.com/news-centre/news/</span></td><td>EMEA +9.4%, NA +6.7%, Asia weakness, £90m RCF refinancing, Seoheung JV $10m / 17.5% stake, Nike contract extension to 2029.</td></tr>
+<tr><td><strong>OKC acquisition release November 2025</strong><br><span style="font-size:10px;color:var(--text-dim)">investing.com / TipRanks / MarketScreener</span></td><td>€36m total (€27.6m upfront + €8.4m deferred), 7× 2024 EBITDA of €5.3m, 115 employees, two Spanish facilities (Anglesola + Burgos).</td></tr>
+<tr><td><strong>H2 2025 earnings call transcript</strong><br><span style="font-size:10px;color:var(--text-dim)">themarketsdaily.com / investing.com transcripts</span></td><td>Cox + Wright commentary on Vietnam tariff resilience, footwear normalisation 2026, medium-term margin path to >18%, North America structural improvement.</td></tr>
+<tr><td><strong>Investing.com / Yahoo Finance / Stockopedia</strong><br><span style="font-size:10px;color:var(--text-dim)">live ZTF.L quote data April 2026</span></td><td>Share price 426p, market cap £208m, 52-week range 225-479p, analyst consensus 592-606p, EPS, dividend yield.</td></tr>
+<tr><td><strong>Pat Dorsey, "The Little Book That Builds Wealth"</strong><br><span style="font-size:10px;color:var(--text-dim)">framework reference, 2008</span></td><td>Four sources of moat (intangibles / switching costs / network effects / cost advantages); the "if the CEO is hit by a bus" sustainability test; financial signature of intact moats (sustained ROIC > WACC pattern).</td></tr>
+</tbody>
+</table>
+</div>
+
+<p style="margin-top:24px;font-size:11px;color:var(--text-dim);line-height:1.7;">
+<strong>Methodology notes.</strong> Segment EBITDA estimates derived from disclosed segment operating profits adjusted for D&A allocation (~£3-4m group D&A apportioned by revenue). Multiples derived from comparable specialty chemical / specialty industrial peer sets (Croda, Victrex, Treatt, Fuller (HBF), Dow Olefins on lower end; Hexcel, Solvay specialty on upper end). 10-year price series compiled from Investing.com / Yahoo Finance historical data — monthly closes. EV/EBITDA series back-calculated from CapIQ + own-history financial archives where direct CapIQ data unavailable. ROIC / ROCE from Stockopedia + own-calculation from annual report income statements.
+</p>
+
+<p style="margin-top:16px;font-size:10px;color:var(--text-faint); font-family:'IBM Plex Mono',monospace; line-height:1.7;">Prepared by Joe Barry · April 2026 · LSE final year. Standalone single-name pitch; companion document to Cevian Capital interview deck. Not for distribution.</p>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<script>
+function switchTab(e, id) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  e.currentTarget.classList.add('active');
+  document.getElementById('tab-' + id).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
